@@ -7,6 +7,7 @@ from .api.vendor_bills import VendorBills
 from .api.vendors import Vendors
 from .api.expenses import Expenses
 from .api.invoices import Invoices
+from .api.files import Files
 from .internal.client import NetSuiteClient
 
 class NetSuiteConnection:
@@ -22,3 +23,4 @@ class NetSuiteConnection:
         self.vendors = Vendors(ns_client)
         self.expenses = Expenses(ns_client)
         self.invoices = Invoices(ns_client)
+        self.files = Files(ns_client)
