@@ -13,7 +13,7 @@ class VendorBills(ApiBase):
     VendorBills are not directly searchable - only via as transactions
     """
     def __init__(self, ns_client):
-        ApiBase.__init__(self, ns_client=ns_client, type_name='vendorBill')
+        ApiBase.__init__(self, ns_client=ns_client, type_name='VendorBill')
     
     def get_all_generator(self):
         record_type_search_field = self.ns_client.SearchStringField(searchValue='VendorBill', operator='contains')
